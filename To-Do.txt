@@ -16,7 +16,6 @@ Web Development:
 
 
 Game Development:
-*Fix SourceTree pull
 *Pull the PKN latest build
 *Impliment data in dbs
 	*Items db
