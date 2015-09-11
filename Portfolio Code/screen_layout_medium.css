@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: none;		
+}
+
+.logoItems{
+	text-align: center;
+	padding-top: 50px;	
+}
+
+@media screen and  (min-width: 601px){
+     .mobLogo { display:none; }
+	 #dropdownMenu{ display: none }
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: none;	
+}
+
+a.navItems{
+ background: white;	
+}
+
+#dropdownMenu ul{
+	margin: 0;
+	padding: 0;
+}
+
+.dropDownContent{
+	display: none;
+	list-style: none;	
+	margin: 0px;
+	position: relative;
+	font-size: 0.7em;
+	text-align: left;
+	
+}
+
+.dropDownContent li{
+	padding-top: 15px;	
+}
+
+.dropDownTitles{
+	list-style: none;	
+	text-align:center;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border: 2px solid #626262;
+	height: auto;
+	background: rgb(3, 155, 229);
+	color: #FFF;
+	font-size: 2em;
+	font-weight: bold;
+	transition:all ease-in-out 200ms;
+	
+}
+
+.dropDownTitles:active{
+	background: #01579B;
+	color: #FFF;
+	/*background: -webkit-radial-gradient(rgb(180,186,192) 50%,  rgba(250,250,250,0.6)); /* Safari 5.1-6.0 */
+  /*background: -o-radial-gradient(rgb(180,186,192) 50%,  rgba(250,250,250,0.6)); /* For Opera 11.6-12.0 */
+ 	/*background: -moz-radial-gradient(rgb(180,186,192) 50%, rgba(250,250,250, 0.6)); /* For Firefox 3.6-15 */
+  /*background: radial-gradient(rgb(180,186,192) 50%,  rgba(250,250,250, 0.6)); /* Standard syntax */		
+}
+
+@media screen and  (max-width: 600px){
+     .mobLogo { display:block; }
+	 #nav { display:none; }
+	 h2.rightMTitles{ display: none; }
+	 
+	 #leftMenu{ display: none; }
+	 #rightMenu{ display:none; }
+}
+
+
