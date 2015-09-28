@@ -1,1 +1,24 @@
 - Research for the most suitable Chart library
+- I 've chose Chartjs.
+	*Good looking charts
+	*Easy to implement
+	*Easy to use
+	*It can read external JSON files
+	*Very flexible (easy to customize)
+	*Free
+	*One library is needed  (I was between Flot and Chartjs. Flot will require more library in order to get different designs)
+	*Great variaty of people is using it (easy to find solution)
+	*You can separate the data that you give in Chartjs by datasets - colors and 
+	 options - sizes for better visualization of what you are looking for. I personally find it  better because it keeps the code clean
+	
+-Starting the html file (upload the libraries - JQuery, Chart.min.js and chartJQ.js) 		
+-Created a similar JSON data from the picture
+-Customizing the Line Chart (in progress....)
+	
+
+
+
+*I know that Evojam uses AngularJS. Now I'm creating the 1st version of the chart. I will use html/css and JQuery
+After I finish I will create a 2nd version including PHP. And I hope I will have enough time, I will learn the AngularJS basics
+and create a 3rd version including the company language. But for the 2 first versions I will use JQuery which I'm more familiar with.
+AngularJS was in my future plans to learn, so I guess this chart test will be a good way to start
