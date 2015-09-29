@@ -13,8 +13,15 @@
 	
 -Starting the html file (upload the libraries - JQuery, Chart.min.js and chartJQ.js) 		
 -Created a similar JSON data from the picture
+
 -Customizing the Line Chart (in progress....)
-	
+	-To-Do
+	*button hover
+	*Fix the Revenue Stream
+	*Create SVG for the Dollar Icon
+	-Finish and upload Bar Chart
+
+--Create Chart v2
 
 
 

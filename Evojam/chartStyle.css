@@ -1,0 +1,117 @@
+html, body{
+	margin: 0;
+	padding: 0;	
+	
+}
+
+canvas{
+	width: inherit;
+	height: inherit;
+}
+
+.graph-container {
+	 background: #fff;
+	border: 1px solid #0284C1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    width: 850px;
+    height: 300px;
+    
+    
+}
+
+.graph-container .chartHeader{
+	background:#CEE7F2;
+	border-bottom: 1px solid #0284C1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	padding: 10px 70px;
+	color: #3B3B3B;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:  auto;
+	font-weight: bold;
+	
+	
+	
+}
+.lineChartBox{
+		height:200px;
+		width: 600px;
+		padding: 20px 0 0 40px;
+		float:left;
+		
+}	
+
+.buttonBg{
+ 	background-color: #FFF;
+ 	box-shadow: 0px 2px 1px #999999;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	margin-top: 150px;
+	right:4%;
+	float:left;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+}
+
+.revenueBtn{
+	background: -webkit-linear-gradient( #34CCF8, #0189CB);
+	background: -moz-linear-gradient( #34CCF8, #0189CB);
+	box-shadow:inset 0px 0px 10px -20px #FFF;
+	-webkit-box-shadow:inset 0px 0px 10px -20px #FFF;
+    -moz-box-shadow:inset 0px 0px 10px -20px #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+	color: #FFF;
+	font-size: .8 em;
+	margin: 2px;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	text-align: center;
+	}
+
+.graph-info {
+    width: 590px;
+    margin-bottom: 10px;
+	left: 50%;
+	margin-left:100px;
+	
+}
+.graph-info a {
+    position: relative;
+    display: inline-block;
+	border: none;
+    float: left;
+	background: #FFF;
+    height: 20px;
+    padding: 7px 10px 5px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.graph-info a:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: 13px;
+    left: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.graph-info .netComp { color: #000; }
+.graph-info .analyzer { color: #000; }
+.graph-info .questionRight { color: #000; }
+ 
+.graph-info .netComp:before { background: #FE572E; }
+.graph-info .analyzer:before { background: #009713; }
+.graph-info .questionRight:before { background: #0073E6; }
