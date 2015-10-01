@@ -82,12 +82,7 @@ $(document).ready(function(){
 	
 
 
-	var revValue = 32.556;
-	$(".revValue").html(revValue);
 	
-	
-	var instalValue = 136;
-	$(".instalValue").html(instalValue);
 	
 	//Bar Chart JQuery
 	
@@ -161,4 +156,20 @@ $(document).ready(function(){
 		var ctx2 = document.getElementById("barChart").getContext("2d");
 		var myBarChart = new Chart(ctx2).Bar(BarChartData, options);
 	});
+	
+	
+	$.getJSON('dataInfo.json', function(dataInfo){
+		console.log(dataInfo);
+	
+	
+	$(".revValue").html(dataInfo[0].revenueValue);
+	
+	$(".instalValue").html(dataInfo[0].installations);
+	
+	
+	});
+	
+	
+	
+	
 });
