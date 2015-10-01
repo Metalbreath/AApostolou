@@ -1,4 +1,11 @@
-<svg>
-<rect id="XMLID_16_" x="44.1" y="30.4" class="st0" width="68.3" height="85.8"/>
-<text id="XMLID_6_" transform="matrix(1 0 0 1 44.0571 115.9352)" class="st1 st2 st3">$</text>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-692 950 150 150" style="enable-background:new -692 950 150 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:129px;}
+</style>
+<rect x="-648.7" y="975" class="st0" width="68.7" height="101"/>
+<text transform="matrix(1 0 0 1 -648.6896 1066.5889)" class="st1 st2">$</text>
 </svg>
