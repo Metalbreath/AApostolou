@@ -15,9 +15,10 @@ $(document).ready(function(){
 		
 	//Line Chart JQuery
 	
-	// Getting JSON file
-	$.getJSON('dataLine.json', function(dataLine){
+	// Getting PHP - JSON file
+	$.get('chartLine.php', {type: "line"}, function(dataLine){
 		console.log(dataLine);
+	
 		
 		
 		
@@ -77,23 +78,17 @@ $(document).ready(function(){
 		// Drawing the Chart on the Element in DOM with the id = lineChart
 		var ctx = document.getElementById("lineChart").getContext("2d");
 		var myLineChart = new Chart(ctx).Line(lineChartData, options);
-	
-	});
+		var myLineChart = new Chart(ctx).Line(lineChartData, options);
+	},'json');
 	
 
-
-	var revValue = 32.556;
-	$(".revValue").html(revValue);
 	
-	
-	var instalValue = 136;
-	$(".instalValue").html(instalValue);
 	
 	//Bar Chart JQuery
 	
 	
-	// Getting JSON file
-	$.getJSON('dataBar.json', function(dataBar){
+	// Getting PHP - JSON file
+	$.get('chartBar.php', {type: "bar"}, function(dataBar){
 		console.log(dataBar);
 		
 	//Translate JSON
@@ -160,5 +155,21 @@ $(document).ready(function(){
 		};
 		var ctx2 = document.getElementById("barChart").getContext("2d");
 		var myBarChart = new Chart(ctx2).Bar(BarChartData, options);
+	},'json');
+	
+	
+	$.get('chartBar.php', {type: "info"}, function(dataInfo){
+		console.log(dataInfo);
+	
+	
+	$(".revValue").html(dataInfo.revenueValue);
+	
+	$(".instalValue").html(dataInfo.installations);
+	
+	
 	});
+	
+	
+	
+	
 });

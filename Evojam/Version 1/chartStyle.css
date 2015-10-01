@@ -29,9 +29,7 @@ html, body, div, ul, li, a{
 	margin: -60px 0 0 20px;
 }
 
-.iconBg::after{
-	
-}
+
 #dollarIcon{
 	
 	background: -webkit-linear-gradient( #EAFEFF, #DFF3FF);
