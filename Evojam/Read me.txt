@@ -1,0 +1,10 @@
+Version 1 - Complete (HTML5, CSS3, JQuery, JSON)
+
+Version 2- Progress (HTML5, CSS3, JQuery, PHP, JSON)
+
+Version 3 - (Include AngularJS)
+
+I know that Evojam uses AngularJS. Now I'm creating the 1st version of the chart. I will use html/css and JQuery
+After I finish I will create a 2nd version including PHP. And I hope I will have enough time, I will learn the AngularJS basics
+and create a 3rd version including the company language. But for the 2 first versions I will use JQuery which I'm more familiar with.
+AngularJS was in my future plans to learn, so I guess this chart test will be a good way to start

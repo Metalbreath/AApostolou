@@ -1,0 +1,238 @@
+html, body, div, ul, li, a{
+	margin: 0;
+	padding: 0;	
+	font-size: 20px;
+	font-family: segoe-ui, arial, Tahoma;
+	
+}
+
+
+
+/*Container for the Graphs*/
+.chartModule{
+	max-width: 980px;
+	margin: 0 auto;	
+	padding: 0;
+	position: relative;	
+}
+
+
+.iconBg{
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid #000;
+	 -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	width: 50px;
+	height: 50px;
+	margin: -60px 0 0 20px;
+}
+
+#dollarIcon{
+	
+	background: -webkit-linear-gradient( #EAFEFF, #DFF3FF);
+	background: -moz-linear-gradient( #EAFEFF, #DFF3FF);
+	border: 1px solid #000;
+	 -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	background-image: url(SVG/revenue_icon.svg), none;
+	background-size: 100%;
+	width: 92%;
+	height: 92%;
+	margin: 1px 1px;
+	
+	
+		
+}
+
+
+#instalIcon{
+	background: -webkit-linear-gradient( #EAFEFF, #DFF3FF);
+	background: -moz-linear-gradient( #EAFEFF, #DFF3FF);
+	border: 1px solid #000;
+	 -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	background-image: url(SVG/installation_icon.svg), none;
+	background-size: 100%;
+	width: 92%;
+	height: 92%;
+	margin: 1px 1px;
+}
+
+.graph-container {
+	 background: #fff;
+	border: 1px solid #0284C1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    width: 850px;
+    height: 320px;
+	margin: 30px;
+    
+    
+}
+
+.graph-container .chartHeader{
+	background:#CEE7F2;
+	border-bottom: 1px solid #0284C1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	padding: 10px 100px;
+	color: #3B3B3B;
+	margin:  auto;
+	font-weight: bold;
+	font-size: 0.9em;
+	
+	
+	
+	
+}
+
+.graph-title{
+	text-align: right;
+	font-size: .7em;	
+}
+
+
+
+/*Chart Styles and Canvas*/
+canvas{
+	width: inherit;
+	height: inherit;
+}
+
+.chartBox{
+		height:200px;
+		width: 600px;
+		padding: 20px 0 0 40px;
+		float:left;
+		
+}	
+
+
+/*Values and Buttons - Aside*/
+.chartInfoBox{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.revStyle{
+	font-size: 1em;
+	color: #0379C0;
+	float: right;
+	text-align:right;
+	margin: 10px 20px;
+
+}
+
+.valueStyle{
+	font-size: 2em;
+	color: #004171;	
+	line-height: -20px; 
+	
+}
+
+.revText{
+	font-size: .7em;	
+	font-weight: bold;	
+}
+
+
+
+.buttonBg{
+ 	
+ 	box-shadow: 0px 2px 1px #999999;
+	width: 150px;
+	height: 32px;
+	position: absolute;
+	margin-top: 215px;
+	right:4%;
+	float:left;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+}
+
+.buttonColor{
+	background: -webkit-linear-gradient( #34CCF8, #0189CB);
+	background: -moz-linear-gradient( #34CCF8, #0189CB);
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+	margin: 2px;
+	padding: 3px 0;
+	text-align: center;
+	
+
+	}
+.btnTitles{
+	color: #FFF;
+	font-size: 0.8em;
+	padding-bottom: 2px;
+	cursor: pointer;
+
+}
+
+.buttonColor:hover{
+		background: -webkit-linear-gradient( #0189CB, #96ECFE);
+		background: -moz-linear-gradient( #0189CB, #96ECFE);
+}
+
+.buttonColor:active{
+	box-shadow: inset 0px 0px 10px #02799B;
+	
+}
+.btnTitle:active{
+	line-height: 10%;	
+}
+
+
+
+/*Legends*/
+.graph-info {
+    width: 590px;
+    margin-bottom: 10px;
+	left: 50%;
+	margin-left:100px;
+	
+}
+.graph-info a {
+    position: relative;
+    display: inline-block;
+	border: none;
+    float: left;
+	background: #FFF;
+    height: 20px;
+    padding: 7px 10px 5px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: default;
+	font-size: 0.7em;
+}
+
+.graph-info a:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: 13px;
+    left: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.graph-info .netComp { color: #000; }
+.graph-info .analyzer { color: #000; }
+.graph-info .questionRight { color: #000; }
+ 
+.graph-info .netComp:before { background: #FE572E; }
+.graph-info .analyzer:before { background: #009713; }
+.graph-info .questionRight:before { background: #0073E6; }

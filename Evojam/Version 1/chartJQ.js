@@ -2,7 +2,7 @@ $(document).ready(function(){
 	//Global
 	var labelTags = [["Week 47"],["week 48"], ["Week 49"], ["Week 50"], ["Week 51"], ["Week 52"]];
 	
-	var min = Infinity;
+	var min = '0';
 	var dollarSign = function(e) {
 				if (e.value < min)
 					min = e.value;
@@ -25,9 +25,9 @@ $(document).ready(function(){
 		var chartjsDataLine = [];
 		for (var i = 0; i < dataLine.length; i++) {
    		chartjsDataLine.push(dataLine[i].data); 
-			};
+			}
 		//Chart Line Data
-		lineChartData = {
+		var lineChartData = {
 			labels : labelTags,
 			datasets: [
   			{     	 
@@ -86,7 +86,8 @@ $(document).ready(function(){
 	$(".revValue").html(revValue);
 	
 	
-	
+	var instalValue = 136;
+	$(".instalValue").html(instalValue);
 	
 	//Bar Chart JQuery
 	
@@ -101,7 +102,7 @@ $(document).ready(function(){
    		chartjsDataBar.push(dataBar[i].data); 
 		};
 			
-		BarChartData = {
+		var BarChartData = {
 			labels : labelTags,
 			datasets: [
   			{     	 
@@ -134,7 +135,7 @@ $(document).ready(function(){
 			
 		]};
 		
-		var minBar = 1;
+		var minBar = '0';
 		var options = {
 				scaleShowVerticalLines: false,
 				barShowStroke : false,
@@ -144,15 +145,17 @@ $(document).ready(function(){
 				scaleSteps: 2,
 				scaleStepWidth: 5,
 				scaleStartValue: 0,
-				maintainAspectRatio: true,
+				scaleOverlay : false,
 				 scaleLabel:  function(e) {
-				if (e.value < minBar)
+				if (e.value < minBar){
 					minBar = e.value;
+				}
 		
-				if (e.value === minBar)
+				if (e.value === minBar){
 					return '';
-				else
+				}else{
 					return e.value;
+				}
 			}
 		};
 		var ctx2 = document.getElementById("barChart").getContext("2d");
