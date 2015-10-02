@@ -4,14 +4,14 @@ $(document).ready(function(){
 	
 	var min = '0';
 	var dollarSign = function(e) {
-				if (e.value < min)
+				if (e.value < min){
 					min = e.value;
-		
-				if (e.value === min)
+				}
+				if (e.value === min){
 					return '$';
-				else
+				}else{
 					return e.value;
-			};
+				}};
 		
 	//Line Chart JQuery
 	
@@ -92,10 +92,10 @@ $(document).ready(function(){
 		console.log(dataBar);
 		
 	//Translate JSON
-		var chartjsDataBar = [];
-		for (var i = 0; i < dataBar.length; i++) {
-   		chartjsDataBar.push(dataBar[i].data); 
-		};
+			var chartjsDataBar = [];
+			for (var i = 0; i < dataBar.length; i++) {
+			chartjsDataBar.push(dataBar[i].data); 
+			};
 			
 		var BarChartData = {
 			labels : labelTags,
@@ -158,18 +158,20 @@ $(document).ready(function(){
 	},'json');
 	
 	
-	$.get('chartBar.php', {type: "info"}, function(dataInfo){
+	$.get('dataInfo.php', {type: "info"}, function(dataInfo){
 		console.log(dataInfo);
 	
 	
+		
+   		
+		
 	$(".revValue").html(dataInfo.revenueValue);
 	
 	$(".instalValue").html(dataInfo.installations);
 	
 	
-	});
+	},'json');
 	
-	
-	
+
 	
 });
